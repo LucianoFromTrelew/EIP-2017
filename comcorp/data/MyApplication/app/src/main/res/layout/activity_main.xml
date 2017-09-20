@@ -1,33 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    android:background=""
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.developer.myapplication.MainActivity">
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="1"
+    tools:context="com.example.developer.myapplication.Ppal"
+    tools:visibility="visible">
 
     <TextView
         android:id="@+id/texto"
-        android:layout_width="299dp"
-        android:layout_height="103dp"
-        android:text="@string/texto"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
-
-    <Button
-        android:id="@+id/el_boton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="jeje"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="466dp" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:text="saludar" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:hint="Nombre"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/cambiar_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:text="A ver dale nomas"
+        android:layout_below="@+id/boton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/boton_pepe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boton"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignStart="@+id/input"
+        android:layout_marginBottom="49dp"
+        android:onClick="pepe"
+        android:text="PEPE" />
+</RelativeLayout>

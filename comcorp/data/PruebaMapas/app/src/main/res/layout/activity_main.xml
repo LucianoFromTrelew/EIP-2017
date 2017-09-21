@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.developer.pruebamapas.MainActivity">
+
+    <Button
+        android:id="@+id/botonMapas"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="abrirMapas"
+        android:text="Mapas"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
+</android.support.constraint.ConstraintLayout>
